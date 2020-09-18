@@ -1,0 +1,22 @@
+{
+  "name": "@ts-template/common",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Evan Pierce <mrthinger@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf dist",
+    "build": "npm run -s clean && tsc",
+    "dev": "tsc --watch"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  }
+}

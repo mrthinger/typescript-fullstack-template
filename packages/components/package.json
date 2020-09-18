@@ -1,0 +1,26 @@
+{
+  "name": "@ts-template/components",
+  "version": "0.0.0",
+  "description": "> TODO: description",
+  "author": "Evan Pierce <mrthinger@gmail.com>",
+  "homepage": "",
+  "license": "ISC",
+  "main": "dist/index",
+  "types": "dist/index",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "test": "jest",
+    "clean": "rimraf dist",
+    "build": "npm run -s clean && tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@types/react": "^16.9.46",
+    "react": "^16.13.1"
+  },
+  "jest": {
+    "preset": "ts-jest"
+  }
+}
